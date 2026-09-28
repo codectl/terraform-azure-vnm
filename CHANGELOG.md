@@ -1,0 +1,46 @@
+# Changelog
+
+## [2.0.0](https://github.com/CloudNationHQ/terraform-azure-vnm/compare/v1.3.0...v2.0.0) (2026-09-07)
+
+
+### ⚠ BREAKING CHANGES
+
+* this change causes recreates
+
+### Features
+
+* azurerm provider 5 upgrade ([#22](https://github.com/CloudNationHQ/terraform-azure-vnm/issues/22)) ([123d6db](https://github.com/CloudNationHQ/terraform-azure-vnm/commit/123d6dba0c6baf564605d8862bc2857e526c6d72))
+* **deps:** bump github.com/cloudnationhq/az-cn-go-validor in /tests ([#18](https://github.com/CloudNationHQ/terraform-azure-vnm/issues/18)) ([0a0e623](https://github.com/CloudNationHQ/terraform-azure-vnm/commit/0a0e623c57252d4dc978d76dff8723e4d2ccc4a6))
+* **deps:** bump golang.org/x/crypto from 0.45.0 to 0.52.0 in /tests ([#20](https://github.com/CloudNationHQ/terraform-azure-vnm/issues/20)) ([1fef884](https://github.com/CloudNationHQ/terraform-azure-vnm/commit/1fef884e73f36253c27e6aa54f446ebb1908ffa1))
+
+## [1.3.0](https://github.com/CloudNationHQ/terraform-azure-vnm/compare/v1.2.0...v1.3.0) (2026-05-26)
+
+
+### Features
+
+* add route_table_usage_mode to routing configurations ([#16](https://github.com/CloudNationHQ/terraform-azure-vnm/issues/16)) ([432b340](https://github.com/CloudNationHQ/terraform-azure-vnm/commit/432b340e4affc80fc5a5d6199e1bd5861e4f6772))
+* **deps:** bump github.com/cloudnationhq/az-cn-go-validor in /tests ([#11](https://github.com/CloudNationHQ/terraform-azure-vnm/issues/11)) ([c8ade8a](https://github.com/CloudNationHQ/terraform-azure-vnm/commit/c8ade8ac5dbe60b56314afd9dc3e55105bb41385))
+
+## [1.2.0](https://github.com/CloudNationHQ/terraform-azure-vnm/compare/v1.1.0...v1.2.0) (2026-03-04)
+
+
+### Features
+
+* update naming module version to 0.26 and add member_type to network groups ([#13](https://github.com/CloudNationHQ/terraform-azure-vnm/issues/13)) ([a7b21e5](https://github.com/CloudNationHQ/terraform-azure-vnm/commit/a7b21e557f800b52cf51121fbf38c162fb28a80c))
+
+## [1.1.0](https://github.com/CloudNationHQ/terraform-azure-vnm/compare/v1.0.0...v1.1.0) (2025-11-04)
+
+
+### Features
+
+* add missing properties for routing rule collections ([#7](https://github.com/CloudNationHQ/terraform-azure-vnm/issues/7)) ([3f92180](https://github.com/CloudNationHQ/terraform-azure-vnm/commit/3f921801b6c88d79df8d9e8c9920ff5deab9018b))
+
+## 1.0.0 (2025-10-22)
+
+
+### Features
+
+* add initial structure ([ba7a836](https://github.com/CloudNationHQ/terraform-azure-vnm/commit/ba7a836b2eb04481f3fc75c05e8647f2e4e11059))
+* **deps:** bump github.com/cloudnationhq/az-cn-go-validor in /tests ([#2](https://github.com/CloudNationHQ/terraform-azure-vnm/issues/2)) ([3580f5e](https://github.com/CloudNationHQ/terraform-azure-vnm/commit/3580f5e28c7cbcb907feb66f2ccd5ba95a855505))
+* initial commit for vnm module ([cddc01f](https://github.com/CloudNationHQ/terraform-azure-vnm/commit/cddc01f441067f34f1303a57d758d0a7f3969bbe))
+* small adjustments ([#3](https://github.com/CloudNationHQ/terraform-azure-vnm/issues/3)) ([b998687](https://github.com/CloudNationHQ/terraform-azure-vnm/commit/b9986875c6e013052d9ba4042db148f552a93a9d))
