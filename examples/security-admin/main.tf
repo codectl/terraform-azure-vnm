@@ -1,25 +1,34 @@
 module "naming" {
-  source  = "cloudnationhq/naming/azure"
-  version = "~> 0.32"
+  source  = "codectl/naming/azure"
+  version = "~> 0.1"
 
   suffix = ["demo", "security"]
 }
 
+module "regions" {
+  source  = "codectl/locations/azure"
+  version = "~> 1.0"
+
+  location = {
+    primary = "westeurope"
+  }
+}
+
 module "rg" {
-  source  = "cloudnationhq/rg/azure"
-  version = "~> 3.0"
+  source  = "codectl/rg/azure"
+  version = "~> 1.0"
 
   groups = {
     demo = {
       name     = module.naming.resource_group.name_unique
-      location = "westeurope"
+      location = module.regions.location.primary.name
     }
   }
 }
 
 module "vnets" {
-  source  = "cloudnationhq/vnet/azure"
-  version = "~> 10.0"
+  source  = "codectl/vnet/azure"
+  version = "~> 1.0"
 
   for_each = local.vnets
 
@@ -40,8 +49,8 @@ module "vnets" {
 data "azurerm_subscription" "current" {}
 
 module "virtual_network_manager" {
-  source  = "cloudnationhq/vnm/azure"
-  version = "~> 2.0"
+  source  = "codectl/vnm/azure"
+  version = "~> 1.0"
 
   network_manager = {
     name                = module.naming.virtual_network_manager.name_unique
